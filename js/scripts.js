@@ -43,7 +43,7 @@ $(document).ready(function () {
     return char + sentence;
   }
 
-  // reverse a string
+  // reverse a string and construct the encoded sentence
   var newSentence = reverseFirstLast(sentence);
   newSentence = copyMidtoFront(newSentence);
   newSentence = reverseString(newSentence);
