@@ -2,6 +2,9 @@ $(document).ready(function () {
   // prompt for a sentence
     // store in a var and print to console
 
+  ////////////////////////////////////////////////////////////
+  //                   Business Logic                       //
+  ////////////////////////////////////////////////////////////
   var sentence = prompt("Please provide me with a sentence:");
   console.log(sentence);
 
@@ -45,15 +48,21 @@ $(document).ready(function () {
   newSentence = copyMidtoFront(newSentence);
   newSentence = reverseString(newSentence);
 
+
+
+  ////////////////////////////////////////////////////////////
+  //             User Interface Logic                       //
+  ////////////////////////////////////////////////////////////
   //set initial value in html
-  $("#output").text(sentence);
+  $("#output").val(sentence);
 
   //click event for display original
   $("#original").click(function(){
-    $("#output").text(sentence);
+    $("#output").val(sentence);
   });
   //click event for show encoded
   $("#encode").click(function(){
-    $("#output").text(newSentence);
+    $("#output").val(newSentence);
+
   });
 });
