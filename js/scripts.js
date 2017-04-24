@@ -63,6 +63,5 @@ $(document).ready(function () {
   //click event for show encoded
   $("#encode").click(function(){
     $("#output").val(newSentence);
-
   });
 });
