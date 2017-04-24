@@ -44,4 +44,16 @@ $(document).ready(function () {
   var newSentence = reverseFirstLast(sentence);
   newSentence = copyMidtoFront(newSentence);
   newSentence = reverseString(newSentence);
+
+  //set initial value in html
+  $("#output").text(sentence);
+
+  //click event for display original
+  $("#original").click(function(){
+    $("#output").text(sentence);
+  });
+  //click event for show encoded
+  $("#encode").click(function(){
+    $("#output").text(newSentence);
+  });
 });
