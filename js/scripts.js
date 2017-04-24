@@ -64,4 +64,29 @@ $(document).ready(function () {
   $("#encode").click(function(){
     $("#output").val(newSentence);
   });
+
+  $(".red").click(function(){
+    $("body").removeClass();
+    $("body").addClass('red');
+  });
+
+  $(".orange").click(function(){
+    $("body").removeClass();
+    $("body").addClass('orange');
+  });
+
+  $(".green").click(function(){
+    $("body").removeClass();
+    $("body").addClass('green');
+  });
+
+  $(".purple").click(function(){
+    $("body").removeClass();
+    $("body").addClass('purple');
+  });
+
+  $('.btn').click(function () {
+    $('body').removeClass();
+  });
+
 });

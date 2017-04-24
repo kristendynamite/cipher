@@ -16,3 +16,27 @@ img {
   font-size: 50px;
   padding: 0 15px;
 }
+
+.red {
+  background-color: red;
+}
+
+.orange {
+  background-color: orange;
+}
+
+.green {
+  background-color: green;
+}
+
+.purple {
+  background-color: purple;
+}
+
+.red, .orange, .green, .purple {
+  height: 50px;
+}
+
+.color-picker-row {
+  border: 2px solid black;
+}
